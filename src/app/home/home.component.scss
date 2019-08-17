@@ -390,7 +390,6 @@
     background-position: center;
     position: relative;
     z-index: 999;
-    height: 100vh;
  
     &:after{
         display: block;
@@ -422,6 +421,8 @@
     }
  
     .bottom-view{
+        padding-bottom: 50px;
+
         .bottom-top-logo{
             max-width: 391px;
         }
@@ -435,10 +436,6 @@
  
  
     .sub-footer{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
         margin: auto;
         text-align: center;
         /* padding: 20px 0px; */
@@ -450,15 +447,16 @@
         }
         ul{
             padding: 0px;
+            width: 100%;
         }
         li{
             display: inline-block;
             margin: auto;
             padding: 0px 50px;
-         
- 
+            
             a{
                 color:white;
+                font-size: 13px;
  
                 &:hover{
                     list-style: none;
@@ -473,14 +471,68 @@
 // ==========================media query css=================//
 
 @media (max-width:1300px){
-    .all-details-section .fixed-section{
-        position: inherit;
+    .all-details-section{
+         .fixed-section{
+          position: inherit;
+          max-width: 100%;
+          padding: 30px;
+        }
+
+        .list-menu ul {
+            padding-left:0px;
+            text-align: center;
+
+            &:before{
+                content: none;
+            }
+
+
+            li{
+                display: inline-block;
+                padding: 10px;
+                text-transform: uppercase;
+    
+                a{
+                   
+                    padding: 4px 8px;
+                    border-radius: 2px;
+                }
+                .active{
+                    background: #ffdc17;
+                    &:before{
+                        content: none;  
+                    }
+                }
+            }
+        }
+
+       
     }
 
     .width-100{
         width: 100%;
         flex:0 0 100%;
         max-width: 100%;
+    }
+
+    .d-flex-m{
+        display: flex;
+        align-items: center;
+        margin-bottom: 41px !important;
+        
+
+        .main-hd-text{
+            margin-left: 30px !important;
+        }
+    }
+
+
+    .all-details-section .select-jouney {
+        display: block;
+
+        select{
+            width:100%;
+        }
     }
 }
 
@@ -533,6 +585,27 @@
 
         }
     }
+
+
+    .sub-footer{
+ 
+        li{
+            padding: 0px 20px !important;
+
+           &:last-child{
+               display: block !important;
+           }
+        }
+    }
+
+    .thanks-secton{
+        padding-top: 60px;
+         .thanks-content h2{
+              font-size: 22px;
+              margin-bottom: 41px;
+        }
+   }
+
 
 }
 @media (max-width:650px){
