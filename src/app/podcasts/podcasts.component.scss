@@ -1,0 +1,67 @@
+.podcast-section{
+
+    .hd-section{
+        flex-wrap: nowrap;
+        display: flex;
+        align-items: center;
+
+        .right-video-ft{
+            flex: 0 0 70%;
+            display: inline-flex;
+            justify-content: flex-end;
+
+            .year,.month, select{
+                padding: 8px 18px;
+                background-color: #797878;
+                font-size: 15px;
+                font-weight: 700;
+                color: white;
+                border-radius: 5px;
+                margin: 0px 10px;
+                border: none;
+                height: 39px;
+
+
+                &:active, &:focus, &:hover{
+                    outline: none;
+                    box-shadow: none;
+                }
+            
+            }
+
+            select{
+                background-image: url(/assets/images/down.png);
+                background-size: 10px;
+                background-position-x: 110px;
+                background-position-y: 17px;            
+                 option{
+                        background: white;
+                        font-weight: bold;
+                        font-size: 15px;
+                        color: #000;
+                }
+            }
+        }
+        p{
+            flex:0 0 30%;
+            color: white;
+            font-weight: 700;
+            font-size: 15px;
+            margin-bottom: 0px;
+        }
+    }
+
+
+    .main-video-sc{
+        embed{
+            height: 412px;
+            width: 100%;
+            border-radius: 10px;
+
+            body:-webkit-full-page-media {
+                background: transparent;
+            }
+        }
+    }
+    
+}
