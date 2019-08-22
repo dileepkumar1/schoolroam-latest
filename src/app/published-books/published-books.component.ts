@@ -1,66 +1,56 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-podcasts',
-  templateUrl: './podcasts.component.html',
-  styleUrls: ['./podcasts.component.scss']
+  selector: 'app-published-books',
+  templateUrl: './published-books.component.html',
+  styleUrls: ['./published-books.component.scss']
 })
-export class PodcastsComponent implements OnInit {
-
+export class PublishedBooksComponent implements OnInit {
   cards = [
     {
       title: 'Card Title 1',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg'
+      img: 'assets/images/book.png'
     },
     {
       title: 'Card Title 2',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg'
+      img: 'assets/images/book.png'
     },
     {
       title: 'Card Title 3',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg'
+      img: 'assets/images/book.png'
     },
     {
       title: 'Card Title 4',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg'
+      img: 'assets/images/book.png'
     },
     {
       title: 'Card Title 5',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg'
+      img: 'assets/images/book.png'
     },
     {
       title: 'Card Title 6',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg'
+      img: 'assets/images/book.png'
     },
     {
       title: 'Card Title 7',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg'
+      img: 'assets/images/book.png'
     },
     {
       title: 'Card Title 8',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg'
+      img: 'assets/images/book.png'
     },
     {
       title: 'Card Title 9',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg'
+      img: 'assets/images/book.png'
     },
   ];
   slides: any = [[]];
@@ -74,5 +64,4 @@ export class PodcastsComponent implements OnInit {
   ngOnInit() {
     this.slides = this.chunk(this.cards, 3);
   }
-
 }
