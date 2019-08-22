@@ -21,29 +21,6 @@
 
     </div>
   </nav>
-  <section class="banner">
-    <div class="my-container relative">
-        <div class="row">
-            <div class="col-lg-4 text-center width-100">
-                <div class="left-text-section">
-                    <img class="heading-img" src="assets/images/one.png">
-                    <h2 class="text-heading">Travelling Students</h2>
-                    <div class="wall-text"> <img src="assets/images/wall.png"></div>
-                    <p class="text-normal">24x7 Access to your  Work Share with friends anytime Create your portfolio</p>
-                    <div class="scroll-set">
-                        <span><i class="fas fa-long-arrow-alt-down"></i></span>
-                        <p class="mt-2">scroll to being</p>
-                    </div>
-                </div>  
-            </div>
-            <div class="col-lg-">
-                <div class="fixed-section">
-                   <app-video-summary></app-video-summary>
-                </div>
-            </div>
-        </div>
-    </div>
-  </section>
 
   <section class="all-details-section">
     <div class="my-container">
@@ -66,46 +43,28 @@
                 </div>
                 <div class="list-menu">
                     <ul>
-                        <li><a href="/two/podcast">Podcasts</a></li>
-                        <li><a  href="/two/publishedbooks">Student Travel Chronicle</a></li>
-                        <li><a  href="/two/podcast">Video Logs</a></li>
-                        <li><a  href="/two/publishedbooks">Travel Book</a></li>
-                        <li><a  href="/two">Blue Bulb Bloggers Inc</a></li>
-                        <li><a  href="/two">Testimonials</a></li>
-                        <li><a  href="/two">Journey Moments</a></li>
-                        <li><a  href="/two">Journey Champs</a></li>
-                        <li><a  href="two/principal-desk">From the Principal’s Desk</a></li>
+                        <li><a  [routerLink]="['/two/podcast']"  class="active">Podcasts</a></li>
+                        <li><a  [routerLink]="['/two/publishedbooks']">Student Travel Chronicle</a></li>
+                        <li><a [routerLink]="['/two/podcast']">Video Logs</a></li>
+                        <li><a [routerLink]="['/two/travel-book']">Travel Book</a></li>
+                        <li><a>Blue Bulb Bloggers Inc</a></li>
+                        <li><a>Testimonials</a></li>
+                        <li><a>Journey Moments</a></li>
+                        <li><a>Journey Champs</a></li>
+                        <li><a [routerLink]="['/two/principal-desk']">From the Principal’s Desk</a></li>
                     </ul>
                 </div>
             </div>
+            <div class="col-lg-">
+                    <div class="fixed-section">
+                        <router-outlet ></router-outlet>   
+                    </div>
+                </div>
         </div>
     </div>
   </section>
 
-  <section class="thanks-secton">
-    <div class="container">
-        <div class="row">
-            <div class="thanks-content w-100">
-                <h2> Thank you for visiting our ClassRoam Wall. Keep Visiting for updates on more journeys and exciting new Creative media projects by our students</h2>
-            </div>
-
-            <div class="col-lg-6 text-center bottom-view">
-                 <img class="bottom-top-logo" src="assets/images/bottomlogo.png">
-                 <p>Ultimate source of student-traveller 
-                        generated material. Curated on-journey.</p>
-                <img src="assets/images/edterra.png">
-            </div>
-            <div class="col-lg-6">
-                    <video width="100%" height="400" controls>
-                            <source src="assets/video/demo.mp4" type="video/mp4">
-                            <source src="assets/video/demo.ogg" type="video/ogg">
-                            Your browser does not support the video tag.
-                    </video>    
-                
-            </div>
-        </div>
-        
-    </div>
+  <section class="thanks-secton bg-black">
     <div class="container-fluid sub-footer">
         <div class="row">
             <ul>

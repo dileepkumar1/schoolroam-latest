@@ -1,0 +1,98 @@
+.published-book-section{
+
+    .hd-section{
+        flex-wrap: nowrap;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .right-video-ft{
+            flex: 0 0 70%;
+            display: inline-flex;
+            justify-content: flex-end;
+
+            .year,.month, select{
+                padding: 8px 18px;
+                background-color: #797878;
+                font-size: 15px;
+                font-weight: 700;
+                color: white;
+                border-radius: 5px;
+                margin: 0px 10px;
+                border: none;
+                height: 39px;
+
+
+                &:active, &:focus, &:hover{
+                    outline: none;
+                    box-shadow: none;
+                }
+            
+            }
+
+            select{
+                background-image: url(/assets/images/down.png);
+                background-size: 10px;
+                background-position-x: 110px;
+                background-position-y: 17px;            
+                 option{
+                        background: white;
+                        font-weight: bold;
+                        font-size: 15px;
+                        color: #000;
+                }
+            }
+        }
+        p{
+            flex:0 0 30%;
+            color: white;
+            font-weight: 700;
+            font-size: 15px;
+            margin-bottom: 0px;
+        }
+    }
+    .photo-of-book{
+        position: relative;
+        display: inline-block;
+
+        .text-zoom{
+            color: white;
+            position: absolute;
+            bottom: 0;
+            z-index: 9999;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+            /* font-weight: 600; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            i{
+                margin-left: 10px;
+            }
+        }
+    }
+    .text-cr-design{
+        margin-top: 38px;
+        .card{
+            background: transparent !important;
+            box-shadow: none !important;
+            color: white;
+
+            h4{
+                font-size: 14px;
+                color: white;
+                margin-top: 10px;
+                /* text-transform: uppercase; */
+                font-weight: bold;
+            }
+
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+}
