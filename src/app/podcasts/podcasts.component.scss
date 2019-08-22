@@ -4,6 +4,7 @@
         flex-wrap: nowrap;
         display: flex;
         align-items: center;
+        margin-bottom: 20px;
 
         .right-video-ft{
             flex: 0 0 70%;
@@ -56,7 +57,7 @@
         margin-top: 30px;
         text-align: left;
         embed{
-            height: 412px;
+            height:460px;
             width: 100%;
             border-radius: 10px;
 
@@ -66,4 +67,153 @@
         }
     }
     
+
+    .video-text-section{
+        color:white;
+        display: flex;
+        position: relative;
+        padding-top: 15px;
+
+        .text-inside{
+            flex:0 0 70%;
+
+            h4{
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            p{
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+
+            .text-student{
+                font-size: 14px;
+                span{
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+            }
+        }
+        
+        .auto-play{
+            flex:0 0 30%;
+
+            p{
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding-top: 4px;
+            }
+        }
+
+        .s-check {
+            display: block;
+            position: relative;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            width: 100px;
+          }
+          
+          /* Hide the browser's default checkbox */
+          .s-check input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+          }
+          
+          /* Create a custom checkbox */
+          .checkmark {
+            position: inherit;
+            height: 24px;
+            width: 57px;
+            background-color: #686767;
+            border-radius: 21px;
+            display: block;
+          }
+          
+          /* On mouse-over, add a grey background color */
+          .s-check:hover input ~ .checkmark {
+            background-color: #686767;
+          }
+          
+          /* When the checkbox is checked, add a blue background */
+          .s-check input:checked ~ .checkmark {
+            background-color: #2196F3;
+          }
+          
+
+           .s-check .checkmark:after {
+            width: 19px;
+            height: 19px;
+            background: white;
+            border-radius: 50%;
+            margin-top: 3px;
+            content: "";
+            position: absolute;
+            right: inherit;
+            left: 3px;
+          }
+
+          /* Show the checkmark when checked */
+          .s-check input:checked ~ .checkmark:after {
+            display: block;
+            right: 3px;
+            left: inherit;;
+          }
+          
+         
+        
+    }
+
+    .text-cr-design{
+        margin-top: 38px;
+        .position-rtive{
+            position: relative;
+        }
+        .video-conent{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span{
+                height: 50px;
+                width: 50px;
+                background: rgba(0, 0, 0, 0.62);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .card{
+            background: transparent !important;
+            box-shadow: none !important;
+            color: white;
+
+            h4{
+                font-size: 14px;
+                color: white;
+                margin-top: 10px;
+                /* text-transform: uppercase; */
+                font-weight: bold;
+            }
+
+            p{
+                font-size: 10px;
+            }
+        }
+    }
 }

@@ -1,3 +1,7 @@
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 <div class="podcast-section">
     <div class="hd-section">
         <p>SORT BY: <span>LATEST FIRST</span></p>
@@ -22,5 +26,39 @@
                     Your browser does not support the video tag.
             </video>
        </div>
+    </div>
+    <div class="video-text-section">
+        <div class="text-inside">
+            <h4>5 FEARLESS MOMENTS WITH EDTERRA</h4>
+            <p>YOUNG DETECTIVES ADVENTURE CAMP 2019</p>
+            <div class="text-student"><span>Student Creators : </span> Harry Baweja, Kabira Dara, Jitu Sakhija</div>
+        </div>
+        <div class="auto-play d-flex">
+            <label class="s-check">
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+              <p>Auto Play</p>
+        </div>
+    </div>
+    <div class="text-cr-design">
+      <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"
+      [animation]="'slide'">
+      <mdb-carousel-item *ngFor="let item of slides; let i = index">
+        <div class="col-md-4" [ngClass]="{'d-none d-md-block': cardIndex !== 0}" *ngFor="let card of item; let cardIndex = index">
+          <mdb-card class="my-1">
+            <div class="position-rtive">
+                <mdb-card-img [src]="card.img" alt="Card image cap">
+                  </mdb-card-img>
+                  <div class="video-conent"> <span class="video-play-icon"><i class="fas fa-play"></i></span> </div>
+            </div>
+            <div>
+              <h4>{{card.title}}</h4>
+              <p>{{card.description}}</p>
+            </div>
+          </mdb-card>
+        </div>
+      </mdb-carousel-item>
+    </mdb-carousel>
     </div>
 </div>
