@@ -11,7 +11,8 @@ import { MDBBootstrapModule,CarouselModule, WavesModule } from 'angular-bootstra
 import { PublishedBooksComponent } from './published-books/published-books.component';
 import { HomeTwoComponent } from './home-two/home-two.component';
 import { TravelBookComponent } from './travel-book/travel-book.component';
-import { PrincipalDeskComponent } from './principal-desk/principal-desk.component'
+import { PrincipalDeskComponent } from './principal-desk/principal-desk.component';
+import { BlogsComponent } from './blogs/blogs.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PrincipalDeskComponent } from './principal-desk/principal-desk.componen
     PublishedBooksComponent,
     HomeTwoComponent,
     TravelBookComponent,
-    PrincipalDeskComponent
+    PrincipalDeskComponent,
+    BlogsComponent
   ],
   imports: [
     BrowserModule,
