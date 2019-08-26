@@ -6,7 +6,8 @@ import { VideoSummaryComponent } from './video-summary/video-summary.component';
 import { PublishedBooksComponent } from './published-books/published-books.component';
 import { HomeTwoComponent } from './home-two/home-two.component';
 import { TravelBookComponent } from './travel-book/travel-book.component';
-import { PrincipalDeskComponent } from './principal-desk/principal-desk.component'
+import { PrincipalDeskComponent } from './principal-desk/principal-desk.component';
+import { BlogsComponent } from './blogs/blogs.component'
 
 
 
@@ -23,8 +24,9 @@ const routes: Routes = [
     { path: 'podcast', component:PodcastsComponent  },
     { path: 'index', component: VideoSummaryComponent},
     { path: 'publishedbooks', component:PublishedBooksComponent},
+    { path: 'blogs', component:BlogsComponent},
     { path: 'travel-book', component:TravelBookComponent},
-    { path: 'principal-desk', component:TravelBookComponent},
+    { path: 'principal-desk', component: PrincipalDeskComponent},
   ]
   },
   {path:'**', redirectTo:'home', pathMatch:'full'}

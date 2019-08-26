@@ -1,27 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-travel-book',
-  templateUrl: './travel-book.component.html',
-  styleUrls: ['./travel-book.component.scss']
+  selector: 'app-blogs',
+  templateUrl: './blogs.component.html',
+  styleUrls: ['./blogs.component.scss']
 })
-export class TravelBookComponent implements OnInit {
-
+export class BlogsComponent implements OnInit {
   cards = [
     {
       title: 'Card Title 1',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      img: 'assets/images/travel-book.png'
+      img: 'assets/images/s-blog.png'
     },
     {
       title: 'Card Title 2',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      img: 'assets/images/travel-book.png'
+      img: 'assets/images/s-blog.png'
     },
     {
       title: 'Card Title 3',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      img: 'assets/images/travel-book.png'
+      img: 'assets/images/s-blog.png'
     },
     {
       title: 'Card Title 4',
@@ -31,27 +30,27 @@ export class TravelBookComponent implements OnInit {
     {
       title: 'Card Title 5',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      img: 'assets/images/travel-book.png'
+      img: 'assets/images/s-blog.png'
     },
     {
       title: 'Card Title 6',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      img: 'assets/images/travel-book.png'
+      img: 'assets/images/s-blog.png'
     },
     {
       title: 'Card Title 7',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      img: 'assets/images/travel-book.png'
+      img: 'assets/images/s-blog.png'
     },
     {
       title: 'Card Title 8',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      img: 'assets/images/travel-book.png'
+      img: 'assets/images/s-blog.png'
     },
     {
       title: 'Card Title 9',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      img: 'assets/images/travel-book.png'
+      img: 'assets/images/s-blog.png'
     },
   ];
   slides: any = [[]];

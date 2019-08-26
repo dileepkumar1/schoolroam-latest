@@ -51,30 +51,62 @@
             margin-bottom: 0px;
         }
     }
-    .photo-of-book{
-        position: relative;
-        display: inline-block;
+  
+    
+    .main-blog-content{
+        margin-top: 20px;
+        .heading-text{
+            font-size: 27px;
+            color: #37C6F7;
+            font-weight: normal;
+            
+        }
+        .main-box{
+            padding: 5px;
+            background: white;
 
-        .text-zoom{
-            color: white;
-            position: absolute;
-            bottom: 0;
-            z-index: 9999;
-            left: 0;
-            right: 0;
-            text-align: center;
-            padding: 10px;
-            font-size: 16px;
-            /* font-weight: 600; */
+            img{
+                width: 100%;
+            }
+
+            p{
+                font-weight: 400;
+                color: #464545;            
+            }
+           
+        }
+
+        .inner-content{
+            padding-left: 0px;
+            list-style-type: none;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            i{
-                margin-left: 10px;
+
+            li{
+                padding: 15px;
+                font-weight: bold;
+                border-bottom: 1px solid #87878a;
+                &:nth-child(1){
+                    flex: 0 0 50%;
+                }
+                &:nth-child(2){
+                    flex: 0 0 25%;
+                    border-left: 2px solid #bcb8b8;
+                    border-right: 2px solid #bcb8b8;
+                }
+
+                &:nth-child(3){
+                    flex: 0 0 25%
+                }
+
+                span{
+                    color: #1D9CD4;
+                }
             }
         }
     }
+
+
+
     .text-cr-design{
         margin-top: 38px;
         .card{
