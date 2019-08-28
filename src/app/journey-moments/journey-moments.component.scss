@@ -1,4 +1,4 @@
-.published-book-section{
+.journey-section{
 
     .hd-section{
         flex-wrap: nowrap;
@@ -51,6 +51,30 @@
             margin-bottom: 0px;
         }
     }
+    .photo-of-book{
+        position: relative;
+        display: inline-block;
+
+        .text-zoom{
+            color: white;
+            position: absolute;
+            bottom: 0;
+            z-index: 9999;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+            /* font-weight: 600; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            i{
+                margin-left: 10px;
+            }
+        }
+    }
     .text-cr-design{
         margin-top: 38px;
         .card{
@@ -71,4 +95,24 @@
             }
         }
     }
+
+    .img-show{
+        display:block;
+        padding-left: 0px !important;
+        li{
+          display: flex;
+          margin-bottom: 10px;
+
+          img{
+            max-width: 33%;
+            flex: 0 0 33%;
+            margin-right: 1%;
+
+            &:nth-child(3){
+                margin-right: 0px;
+            }
+          }
+        }
+    }
 }
+

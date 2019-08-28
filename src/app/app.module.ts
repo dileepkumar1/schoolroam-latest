@@ -12,7 +12,9 @@ import { PublishedBooksComponent } from './published-books/published-books.compo
 import { HomeTwoComponent } from './home-two/home-two.component';
 import { TravelBookComponent } from './travel-book/travel-book.component';
 import { PrincipalDeskComponent } from './principal-desk/principal-desk.component';
-import { BlogsComponent } from './blogs/blogs.component'
+import { BlogsComponent } from './blogs/blogs.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { JourneyMomentsComponent } from './journey-moments/journey-moments.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { BlogsComponent } from './blogs/blogs.component'
     HomeTwoComponent,
     TravelBookComponent,
     PrincipalDeskComponent,
-    BlogsComponent
+    BlogsComponent,
+    TestimonialsComponent,
+    JourneyMomentsComponent
   ],
   imports: [
     BrowserModule,
